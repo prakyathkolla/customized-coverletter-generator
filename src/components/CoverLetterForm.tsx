@@ -1,9 +1,14 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { FileText, Download } from "lucide-react";
+import { FileText, Download, Calendar as CalendarIcon } from "lucide-react";
 import { toast } from "sonner";
-import { generatePDF, generateDOCX } from "../utils/documentGenerators";
+import { generatePDF } from "../utils/pdfGenerator";
+import { generateDOCX } from "../utils/docxGenerator";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Calendar } from "@/components/ui/calendar";
+import { cn } from "@/lib/utils";
+import { format } from "date-fns";
 
 interface FormData {
   name: string;
@@ -29,6 +34,12 @@ const CoverLetterForm = ({ formData, setFormData }: Props) => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const handleDateSelect = (date: Date | undefined) => {
+    if (date) {
+      setFormData({ ...formData, date: format(date, "yyyy-MM-dd") });
+    }
   };
 
   const handleDownload = async (format: "pdf" | "docx") => {
@@ -111,13 +122,28 @@ const CoverLetterForm = ({ formData, setFormData }: Props) => {
         <div className="grid gap-4">
           <div className="space-y-2">
             <Label htmlFor="date">Date</Label>
-            <Input
-              id="date"
-              name="date"
-              type="date"
-              value={formData.date}
-              onChange={handleInputChange}
-            />
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button
+                  variant={"outline"}
+                  className={cn(
+                    "w-full justify-start text-left font-normal",
+                    !formData.date && "text-muted-foreground"
+                  )}
+                >
+                  <CalendarIcon className="mr-2 h-4 w-4" />
+                  {formData.date ? format(new Date(formData.date), "PPP") : <span>Pick a date</span>}
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-auto p-0" align="start">
+                <Calendar
+                  mode="single"
+                  selected={formData.date ? new Date(formData.date) : undefined}
+                  onSelect={handleDateSelect}
+                  initialFocus
+                />
+              </PopoverContent>
+            </Popover>
           </div>
           <div className="space-y-2">
             <Label htmlFor="hiringManagerName">Hiring Manager's Name</Label>
