@@ -20,31 +20,36 @@ const CoverLetterPreview = ({ formData }: { formData: FormData }) => {
     <div className="space-y-6">
       <h2 className="text-xl font-semibold">Preview</h2>
       <div className="prose prose-sm max-w-none">
-        <div className="text-sm space-y-4">
-          <div>
+        <div className="text-sm space-y-4 text-justify">
+          <div className="space-y-2">
             {formData.name}
             <br />
-            {formData.phoneNumber} | {formData.emailAddress} |{" "}
-            {formData.linkedinProfile} | {formData.githubProfile}
+            {formData.phoneNumber}
+            <br />
+            {formData.emailAddress}
+            <br />
+            {formData.linkedinProfile}
+            <br />
+            {formData.githubProfile}
           </div>
 
           <div>{formData.date}</div>
 
           <div>
-            {formData.hiringManagerName}
+            <span className="font-bold">{formData.hiringManagerName}</span>
             <br />
-            {formData.companyName}
+            <span className="font-bold">{formData.companyName}</span>
             <br />
             {formData.companyAddress}
             <br />
             {formData.cityStateZip}
           </div>
 
-          <div>Dear {formData.hiringManagerName},</div>
+          <div>Dear <span className="font-bold">{formData.hiringManagerName}</span>,</div>
 
           <div>
             I am writing to express my interest in the {formData.positionTitle}{" "}
-            role at {formData.companyName}. With over five years of experience
+            role at <span className="font-bold">{formData.companyName}</span>. With over five years of experience
             designing and implementing scalable full-stack solutions, I bring a
             robust blend of technical expertise and problem-solving acumen that
             aligns with the needs of your dynamic team.
@@ -81,7 +86,7 @@ const CoverLetterPreview = ({ formData }: { formData: FormData }) => {
           </div>
 
           <div>
-            What excites me about {formData.companyName} is its commitment to{" "}
+            What excites me about <span className="font-bold">{formData.companyName}</span> is its commitment to{" "}
             {formData.companyValues}. I am eager to bring my expertise in
             full-stack development and cloud architecture to contribute to your
             team's success.
@@ -89,7 +94,7 @@ const CoverLetterPreview = ({ formData }: { formData: FormData }) => {
 
           <div>
             I would welcome the opportunity to discuss how my skills and
-            experiences align with the goals of {formData.companyName}. Thank you
+            experiences align with the goals of <span className="font-bold">{formData.companyName}</span>. Thank you
             for considering my application. I look forward to the possibility of
             contributing to your team's success.
           </div>
