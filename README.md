@@ -12,6 +12,7 @@ This project is a web application designed to generate personalized cover letter
 
 # Technologies Used
 **Frontend:** Built with modern web technologies such as HTML, CSS (Tailwind CSS), and TypeScript.
+
 **Build Tool:** Utilizes Vite for fast and efficient development.
 
 # Getting Started
@@ -25,7 +26,7 @@ If you want to work locally using your own IDE, you can clone this repo and push
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+**Follow these steps:**
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
@@ -45,14 +46,14 @@ This will launch the application, and you can access it in your browser at http:
 
 # Usage
 **Input Personal Information:** Enter your name, contact details, and other relevant personal information.
+
 **Enter Job Details:** Provide the job title, company name, and job description for the position you are applying for.
+
 **Generate Cover Letter:** Click the "Generate" button to create a customized cover letter based on the provided information.
+
 **Preview and Download:** Review the generated cover letter and download it in your preferred format.
 
-Contributing
-Contributions are welcome! If you have suggestions for improvements or new features, feel free to submit a pull request or open an issue.
-
-License
+**License**
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## What technologies are used for this project?
