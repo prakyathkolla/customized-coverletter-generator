@@ -146,12 +146,19 @@ const CoverLetterForm = ({ formData, setFormData }: Props) => {
                   classNames={{
                     day_selected: "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground",
                     day_today: "bg-accent text-accent-foreground",
-                    day: "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                    day: "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                    cell: "relative p-0 focus-within:relative focus-within:z-20 [&:has([aria-selected])]:bg-accent first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md",
+                    nav_button: "hover:bg-accent hover:text-accent-foreground",
+                    table: "w-full border-collapse space-y-1",
+                    head_cell: "text-muted-foreground font-normal text-[0.8rem] w-9 p-0",
+                    caption: "flex justify-center pt-1 relative items-center",
+                    caption_label: "text-sm font-medium",
                   }}
                 />
               </PopoverContent>
             </Popover>
           </div>
+
           <div className="space-y-2">
             <Label htmlFor="hiringManagerName">Hiring Manager's Name</Label>
             <Input
