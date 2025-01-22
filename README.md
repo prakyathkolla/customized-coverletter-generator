@@ -4,13 +4,13 @@ This project is a web application designed to generate personalized cover letter
 **URL**: https://coverletter.kollaprakyath.dev/
 
 # Features
-#User-Friendly Interface: Allows users to input their personal details, job information, and other relevant data to generate a customized cover letter.
-#Real-Time Preview: Displays a preview of the generated cover letter as users input their information.
-#Download Option: Enables users to download the generated cover letter in a preferred format.
+**User-Friendly Interface:** Allows users to input their personal details, job information, and other relevant data to generate a customized cover letter.
+**Real-Time Preview:** Displays a preview of the generated cover letter as users input their information.
+**Download Option:** Enables users to download the generated cover letter in a preferred format.
 
 # Technologies Used
-#Frontend: Built with modern web technologies such as HTML, CSS (Tailwind CSS), and TypeScript.
-#Build Tool: Utilizes Vite for fast and efficient development.
+**Frontend:** Built with modern web technologies such as HTML, CSS (Tailwind CSS), and TypeScript.
+**Build Tool:** Utilizes Vite for fast and efficient development.
 
 # Getting Started
 # How can I edit this code?
@@ -42,10 +42,10 @@ npm run dev
 This will launch the application, and you can access it in your browser at http://localhost:3000.
 
 # Usage
-#Input Personal Information: Enter your name, contact details, and other relevant personal information.
-#Enter Job Details: Provide the job title, company name, and job description for the position you are applying for.
-#Generate Cover Letter: Click the "Generate" button to create a customized cover letter based on the provided information.
-#Preview and Download: Review the generated cover letter and download it in your preferred format.
+**Input Personal Information:** Enter your name, contact details, and other relevant personal information.
+**Enter Job Details:** Provide the job title, company name, and job description for the position you are applying for.
+**Generate Cover Letter:** Click the "Generate" button to create a customized cover letter based on the provided information.
+**Preview and Download:** Review the generated cover letter and download it in your preferred format.
 
 Contributing
 Contributions are welcome! If you have suggestions for improvements or new features, feel free to submit a pull request or open an issue.
