@@ -56,10 +56,10 @@ const CoverLetterPreview = ({ formData }: { formData: FormData }) => {
           </div>
 
           <div>
-            In my current role as a Senior Full Stack Developer at TIAA, I led
+            In my current role as a <b>Senior Full Stack Developer at TIAA</b>, I led
             multiple impactful projects, including the migration of legacy
-            front-ends to micro-front-end architecture using Angular, resulting in
-            a 30% reduction in load times. Additionally, I developed scalable
+            front-ends to micro-front-end architecture using <b>Angular</b>, resulting in
+            a <b>30%</b> reduction in load times. Additionally, I developed scalable
             microservices using Spring Boot and Hibernate, which enhanced system
             scalability by 35%. My proactive approach to resolving critical
             production issues as the primary support contact ensured a 99.9%
@@ -67,21 +67,21 @@ const CoverLetterPreview = ({ formData }: { formData: FormData }) => {
           </div>
 
           <div>
-            Previously, at JP Morgan Chase, I harnessed modern frameworks like
-            React, Tailwind CSS, and Next.js to improve user engagement and page
+            Previously, at <b>JP Morgan Chase</b>, I harnessed modern frameworks like
+            <b>React, Tailwind CSS, and Next.js</b> to improve user engagement and page
             load speeds significantly. My hands-on experience with secure
             authentication systems and robust backend frameworks, coupled with a
-            focus on cloud services such as AWS and GCP, has consistently
+            focus on <b>cloud services</b> such as <b>AWS and GCP</b>, has consistently
             delivered high-quality software aligned with business goals.
           </div>
 
           <div>
             I pride myself on leveraging cutting-edge technologies to drive
-            innovation. For instance, I recently integrated Python-based machine
-            learning pipelines with Flask APIs, applying NLP techniques to extract
-            actionable insights from customer data with 99% accuracy. My
-            proficiency with cloud platforms like AWS, Azure, and OpenShift,
-            alongside tools like Docker, Kubernetes, and Jenkins, has been
+            innovation. For instance, I recently integrated <b>Python-based machine
+            learning</b> pipelines with <b>Flask APIs</b>, applying <b>NLP</b> techniques to extract
+            actionable insights from customer data with <b>99%</b> accuracy. My
+            proficiency with cloud platforms like <b>AWS, Azure, and OpenShift</b>,
+            alongside tools like <b>Docker, Kubernetes, and Jenkins</b>, has been
             instrumental in optimizing deployment pipelines and system reliability.
           </div>
 
