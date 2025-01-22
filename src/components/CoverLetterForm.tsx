@@ -38,7 +38,6 @@ const CoverLetterForm = ({ formData, setFormData }: Props) => {
 
   const handleDateSelect = (date: Date | undefined) => {
     if (date) {
-      // Use startOfDay to normalize the date and prevent timezone issues
       const normalizedDate = startOfDay(date);
       setFormData({ ...formData, date: format(normalizedDate, "yyyy-MM-dd") });
     }
@@ -143,6 +142,12 @@ const CoverLetterForm = ({ formData, setFormData }: Props) => {
                   selected={formData.date ? new Date(formData.date) : undefined}
                   onSelect={handleDateSelect}
                   initialFocus
+                  className="rounded-md border"
+                  classNames={{
+                    day_selected: "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground",
+                    day_today: "bg-accent text-accent-foreground",
+                    day: "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  }}
                 />
               </PopoverContent>
             </Popover>
