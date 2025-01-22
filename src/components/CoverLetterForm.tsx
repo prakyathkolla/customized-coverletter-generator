@@ -146,13 +146,16 @@ const CoverLetterForm = ({ formData, setFormData }: Props) => {
                   classNames={{
                     day_selected: "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground",
                     day_today: "bg-accent text-accent-foreground",
-                    day: "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-                    cell: "relative p-0 focus-within:relative focus-within:z-20 [&:has([aria-selected])]:bg-accent first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md",
-                    nav_button: "hover:bg-accent hover:text-accent-foreground",
+                    day: "h-9 w-9 p-0 font-normal aria-selected:opacity-100 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                    cell: "h-9 w-9 text-center text-sm relative p-0 data-[isSelected=true]:bg-primary data-[isSelected=true]:text-primary-foreground",
+                    head_row: "flex",
+                    head_cell: "text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]",
+                    row: "flex w-full mt-2",
                     table: "w-full border-collapse space-y-1",
-                    head_cell: "text-muted-foreground font-normal text-[0.8rem] w-9 p-0",
                     caption: "flex justify-center pt-1 relative items-center",
-                    caption_label: "text-sm font-medium",
+                    nav_button: "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100",
+                    nav_button_previous: "absolute left-1",
+                    nav_button_next: "absolute right-1",
                   }}
                 />
               </PopoverContent>
