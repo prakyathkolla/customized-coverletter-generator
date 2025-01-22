@@ -8,7 +8,7 @@ import { generateDOCX } from "../utils/docxGenerator";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 import { cn } from "@/lib/utils";
-import { format } from "date-fns";
+import { format, startOfDay } from "date-fns";
 
 interface FormData {
   name: string;
@@ -38,7 +38,9 @@ const CoverLetterForm = ({ formData, setFormData }: Props) => {
 
   const handleDateSelect = (date: Date | undefined) => {
     if (date) {
-      setFormData({ ...formData, date: format(date, "yyyy-MM-dd") });
+      // Use startOfDay to normalize the date and prevent timezone issues
+      const normalizedDate = startOfDay(date);
+      setFormData({ ...formData, date: format(normalizedDate, "yyyy-MM-dd") });
     }
   };
 
