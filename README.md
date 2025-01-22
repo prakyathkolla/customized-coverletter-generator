@@ -5,7 +5,9 @@ This project is a web application designed to generate personalized cover letter
 
 # Features
 **User-Friendly Interface:** Allows users to input their personal details, job information, and other relevant data to generate a customized cover letter.
+
 **Real-Time Preview:** Displays a preview of the generated cover letter as users input their information.
+
 **Download Option:** Enables users to download the generated cover letter in a preferred format.
 
 # Technologies Used
