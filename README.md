@@ -47,8 +47,8 @@ This will launch the application, and you can access it in your browser at http:
 
 ![ScreenShot of Form](images/letter.png)
 
-**License**
-This project is licensed under the MIT License. See the LICENSE file for details.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## What technologies are used for this project?
 
