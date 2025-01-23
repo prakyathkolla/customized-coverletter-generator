@@ -45,6 +45,8 @@ This will launch the application, and you can access it in your browser at http:
 
 **Preview and Download:** Review the generated cover letter and download it in your preferred format.
 
+![ScreenShot of Form](images/letter.png)
+
 **License**
 This project is licensed under the MIT License. See the LICENSE file for details.
 
