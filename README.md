@@ -1,7 +1,7 @@
 # Customized Cover Letter Generator
-This project is a web application designed to generate personalized cover letters based on user-provided information.
+This project is a web application designed to generate personalized cover letters based on user-provided information. This is personally designed for me while applying for full times cover letter is required so creating cover letter for each job can be tiresome. So I created this so that by giving inputs on the UI customizes cover letter can be generated and downloaded in PDF or DOCX.
 
-**URL**: https://coverletter.kollaprakyath.dev/
+You can view a live demo over at https://coverletter.kollaprakyath.dev/
 
 # Features
 **User-Friendly Interface:** Allows users to input their personal details, job information, and other relevant data to generate a customized cover letter.
