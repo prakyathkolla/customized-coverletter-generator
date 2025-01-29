@@ -1,7 +1,11 @@
 # Customized Cover Letter Generator
 This project is a web application designed to generate personalized cover letters based on user-provided information. This is personally designed for me while applying for full times cover letter is required so creating cover letter for each job can be tiresome. So I created this so that by giving inputs on the UI customizes cover letter can be generated and downloaded in PDF or DOCX.
 
-You can view a live demo over at https://coverletter.kollaprakyath.dev/
+## 🔗 Live Demo
+
+[Visit Cover Letter Website](https://coverletter.kollaprakyath.dev/)
+
+---
 
 # Features
 **User-Friendly Interface:** Allows users to input their personal details, job information, and other relevant data to generate a customized cover letter.
@@ -10,10 +14,14 @@ You can view a live demo over at https://coverletter.kollaprakyath.dev/
 
 **Download Option:** Enables users to download the generated cover letter in a preferred format.
 
+---
+
 # Technologies Used
 **Frontend:** Built with modern web technologies such as HTML, CSS (Tailwind CSS), and TypeScript.
 
 **Build Tool:** Utilizes Vite for fast and efficient development.
+
+---
 
 # Running it Locally
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
@@ -33,8 +41,9 @@ npm i
 # Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
-
 This will launch the application, and you can access it in your browser at http://localhost:3000.
+
+---
 
 # Usage
 **Input Personal Information:** Enter your name, contact details, and other relevant personal information.
@@ -45,10 +54,16 @@ This will launch the application, and you can access it in your browser at http:
 
 **Preview and Download:** Review the generated cover letter and download it in your preferred format.
 
+---
+
 ![ScreenShot of Form](images/letter.png)
+
+---
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
 
 ## What technologies are used for this project?
 
